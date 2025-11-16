@@ -1,0 +1,26 @@
+package JavaPractice;
+
+public class ReverseString {
+
+	public static void main(String[] args) {
+		String input="Selenium";
+		String rev="";
+		for(int i=input.length()-1;i>=0;i--)
+		{
+			rev=rev+input.charAt(i);
+		}
+		System.out.println(rev);
+		
+		//Reversing a Sentence
+		String input1="Selenium is an Automation tool";
+		String[] split=input1.split(" ");
+		String revInput1="";
+		for(int j=split.length-1;j>=0;j--)
+		{
+			revInput1=revInput1+split[j]+" ";
+		}
+			
+System.out.println(revInput1.trim());
+	}
+
+}
