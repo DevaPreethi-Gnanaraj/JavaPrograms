@@ -1,0 +1,30 @@
+package JavaPractice;
+
+import java.util.Scanner;
+
+public class PrintEvenOrOddusingStringBuilder {
+
+	public static void main(String[] args) {
+		System.out.println("Enter the range of values");
+		Scanner input=new Scanner(System.in);
+		int n=input.nextInt();
+		StringBuilder even=new StringBuilder();
+		StringBuilder odd=new StringBuilder();
+		for(int i=0;i<=n;i++)
+		{
+			if(i%2==0)
+			{
+				even.append(i).append(" ");
+				
+			}
+			else
+			{
+				odd.append(i).append(" ");
+				
+			}
+		}
+		System.out.println(even);
+		System.out.println(odd);
+	}
+
+}
