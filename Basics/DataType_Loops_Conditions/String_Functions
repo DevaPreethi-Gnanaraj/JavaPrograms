@@ -1,0 +1,49 @@
+package JavaPractice;
+
+public class LearningStringFunctions {
+
+	public static void main(String[] args) {
+		String str="Deva Preethi";
+		int len =str.length();
+		System.out.println(len);// includes spaces as well
+		
+		char c=str.charAt(2);
+		System.out.println(c);// index starts from 0
+		
+		//Print the substring
+		String s=str.substring(5, 11);
+		System.out.println(s);
+		
+		// returns the index of the specific character
+		int indexOfCharE=str.indexOf("P");
+		System.out.println(indexOfCharE);
+		
+		//Compares 2 strings
+		String str1="Deva preethi";
+		Boolean str2=str1.equals(str);// returns either true or false (Case Sensitive)
+		System.out.println(str2);
+		
+		Boolean str3=str1.equalsIgnoreCase(str);// returns either true or false (Case Sensitive is ignored)
+		System.out.println(str3);
+		
+		//Converting to UpperCase
+		String str4=str.toUpperCase();
+		System.out.println(str4);
+		
+		//Converting to LowerCase
+		String str5=str.toLowerCase();
+		System.out.println(str5);
+		
+		String str6=str.replace("e", "$");
+		System.out.println(str6);
+		
+		String str7="  H A P P Y";
+		System.out.println(str7.replaceAll(" ",""));
+		
+		System.out.println(str7.trim());
+		
+		String str8="Java is a programming language";
+		String splitstr8=str8
+	}
+
+}
